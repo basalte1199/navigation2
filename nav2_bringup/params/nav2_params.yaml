@@ -204,7 +204,7 @@ local_costmap:
         mark_threshold: 0
         observation_sources: scan
         scan:
-          topic: /scan_filtered
+          topic: /scan
           max_obstacle_height: 2.0
           clearing: True
           marking: True
@@ -235,7 +235,7 @@ global_costmap:
         enabled: True
         observation_sources: scan
         scan:
-          topic: /scan_filtered
+          topic: /scan
           max_obstacle_height: 2.0
           clearing: True
           marking: True
@@ -364,8 +364,8 @@ velocity_smoother:
     smoothing_frequency: 20.0
     scale_velocities: False
     feedback: "OPEN_LOOP"
-    max_velocity: [0.22, 0.0, 1.0]
-    min_velocity: [-0.22, 0.0, -1.0]
+    max_velocity: [0.26, 0.0, 1.0]
+    min_velocity: [-0.26, 0.0, -1.0]
     max_accel: [2.5, 0.0, 3.2]
     max_decel: [-2.5, 0.0, -3.2]
     odom_topic: "odom"
